@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Enzo Chong Jun Kai's DSA-Sec 2027 interview portfolio: coding, robotics, mathematics, projects, and personal growth.">
   <meta name="theme-color" content="#08131f">
+  <meta property="og:title" content="Enzo Chong Jun Kai | DSA Portfolio">
+  <meta property="og:description" content="A record of learning, building, and growth across coding, robotics, mathematics, and teamwork.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chongjunkai.github.io/dsa-interview-portfolio/">
+  <link rel="canonical" href="https://chongjunkai.github.io/dsa-interview-portfolio/">
   <title>Enzo Chong Jun Kai | DSA Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +18,7 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
   <header class="site-header" id="top">
     <nav class="nav shell" aria-label="Primary navigation">
@@ -42,7 +48,7 @@
         <p class="hero-lead">A curious coder, robotics enthusiast, and problem-solver who enjoys turning ideas into things that work.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#achievements">Explore my journey <span aria-hidden="true">&darr;</span></a>
-          <a class="button button-ghost" href="https://chongjunkai.github.io/SG-Science-Explorer/" target="_blank" rel="noopener">View featured project <span aria-hidden="true">&nearr;</span></a>
+          <button class="button button-ghost video-trigger" type="button">Play my 15-sec intro <span class="play-symbol" aria-hidden="true">&#9654;</span></button>
         </div>
         <dl class="hero-facts" aria-label="Profile highlights">
           <div><dt>School</dt><dd>Maha Bodhi School</dd></div>
@@ -70,6 +76,15 @@
         <div class="floating-chip chip-one">Python</div>
         <div class="floating-chip chip-two">Robotics</div>
         <div class="floating-chip chip-three">Math</div>
+      </div>
+    </section>
+
+    <section class="proof-bar" aria-label="Portfolio highlights">
+      <div class="shell proof-grid">
+        <div class="proof-intro"><span>Evidence at a glance</span><strong>More than awards: a record of action.</strong></div>
+        <div class="proof-stat"><strong>4</strong><span>featured competition milestones</span></div>
+        <div class="proof-stat"><strong>3</strong><span>technical areas explored</span></div>
+        <div class="proof-stat"><strong>1</strong><span>live project built and published</span></div>
       </div>
     </section>
 
@@ -166,6 +181,15 @@
           <a class="text-link" href="https://chongjunkai.github.io/SG-Science-Explorer/" target="_blank" rel="noopener">Open the live project <span aria-hidden="true">&nearr;</span></a>
         </div>
       </article>
+      <div class="build-process reveal" aria-label="My project process">
+        <p class="process-label">How I build</p>
+        <ol>
+          <li><span>01</span><strong>Understand</strong><p>Start with the audience and the problem to solve.</p></li>
+          <li><span>02</span><strong>Prototype</strong><p>Turn the idea into a simple version that can be tested.</p></li>
+          <li><span>03</span><strong>Debug</strong><p>Study what does not work and improve it step by step.</p></li>
+          <li><span>04</span><strong>Reflect</strong><p>Ask what I learnt and what I would build next.</p></li>
+        </ol>
+      </div>
     </section>
 
     <section class="section skills-section" id="growth">
@@ -192,6 +216,7 @@
         <p>I am looking for a school environment where I can deepen my computing knowledge, collaborate with motivated peers, and contribute through curiosity, effort, and teamwork.</p>
       </div>
       <div class="question-list reveal">
+        <p class="answer-tip"><strong>Interview approach:</strong> answer with a specific example, explain what I learnt, and connect it to how I can contribute.</p>
         <details open>
           <summary>Why are you applying through DSA?<span></span></summary>
           <p>Computing is more than a subject I enjoy. It is how I explore ideas and challenge myself. DSA would let me learn in a community that shares that interest and contribute the experience I have gained from coding, robotics, and team competitions.</p>
@@ -219,6 +244,17 @@
   <footer class="footer">
     <div class="shell"><p>Enzo Chong Jun Kai &bull; DSA-Sec 2027 Portfolio</p><p>Designed as a record of learning and growth.</p></div>
   </footer>
+
+  <dialog class="video-dialog" aria-labelledby="video-title">
+    <div class="dialog-top">
+      <div><span>HyperFrames introduction</span><h2 id="video-title">Meet Enzo in 15 seconds</h2></div>
+      <button class="dialog-close" type="button" aria-label="Close introduction video">&times;</button>
+    </div>
+    <div class="video-frame-wrap">
+      <iframe title="Enzo's animated DSA introduction" data-src="hyperframes/?autoplay=1" allow="autoplay"></iframe>
+    </div>
+    <p class="dialog-note">Built as a frame-accurate HTML animation using HyperFrames and GSAP.</p>
+  </dialog>
   <script src="script.js"></script>
 </body>
 </html>
